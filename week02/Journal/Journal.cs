@@ -31,7 +31,7 @@ public class Journal
             foreach (Entry entry in _entries)
             {
                 // Save each entry in "Date|Prompt|EntryText" format
-                outputFile.WriteLine($"{entry._date}|{entry._prompText}|{entry._entryText}");
+                outputFile.WriteLine($"{entry._date}|{entry._hour}|{entry._prompText}|{entry._entryText}");
             }
         }
             
@@ -53,8 +53,9 @@ public class Journal
             Entry newEntry = new Entry();
             
             newEntry._date = parts[0].Trim();
-            newEntry._prompText = parts[1].Trim();
-            newEntry._entryText = parts[2].Trim();
+            newEntry._hour = parts[1].Trim();
+            newEntry._prompText = parts[2].Trim();
+            newEntry._entryText = parts[3].Trim();
             _entries.Add(newEntry);
         }
     }

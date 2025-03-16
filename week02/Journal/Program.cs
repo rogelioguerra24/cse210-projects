@@ -1,6 +1,6 @@
 using System;
 using System.IO; 
-
+/*I have added the hour to each response to the prompt*/
 
 class Program
 {
@@ -61,12 +61,14 @@ class Program
 
                     DateTime theCurrentTime = DateTime.Now;
                     string dateText = theCurrentTime.ToShortDateString();
+                    string hourText = theCurrentTime.ToShortTimeString();
 
 
                     Entry theEntry = new Entry();
                     theEntry._date = dateText;
                     theEntry._prompText = randomPrompt;
                     theEntry._entryText = entryText;
+                    theEntry._hour = hourText;
 
                     
                     theJournal.AddEntry(theEntry);
