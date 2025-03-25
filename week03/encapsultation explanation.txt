@@ -1,0 +1,21 @@
+Encapsulation means a principle of enclosing some part of the class code for other parts of the program to block the Access to this part of the code directly.
+The purpose of that principle is of protect the integrity and Fidelity of some part of a code class, and that is a Benefit because it ensures that the data don't 
+be affected directly instead have the control of that from only the methods of behavior without modifying the private part of the class.
+Like in the following example we are trying to set the values of some private variables that are encapsulated with another method, the Benefit here is that we can 
+set this values with only one method with out the necessity of use the private reference directly. It Will very useful for the companies to save more time to 
+spend with another projects and give the users or programetors a "control bar" to have Access this encapsulated values with only one statement.
+
+
+public class Reference {
+    private string _book;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
+
+    public Reference(string book, int chapter, int verse) {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = verse; // Default to a single verse
+    }
+}
