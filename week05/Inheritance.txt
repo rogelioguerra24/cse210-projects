@@ -1,0 +1,35 @@
+What is inheritance and why is it important?
+Inheritance means the connection or link between classes as Parents or Childs, or in other words, some classes can inherit or copy the attributes or methods from another class, this class is called Child or derived class, while the class from which the information is taken is called Parent or Base.
+
+A benefit of this practice is the short writing code; this principle helps developers use fewer words or code in their programs and, with caution, makes programs shorter and a little bit easier to debug.
+
+An application could be in a program that has a lot of redundancy, like an application of a university that displays or returns the same data of a student a lot of times, attached to their different courses. we can use inheritance to handle the student data only once for the whole visualization. 
+
+Example: 
+public class Assignment {
+
+Example: 
+public class Assignment {
+    protected string _studentName ;
+    private string _topic ;
+    public Assignment(string studentName, string topic) {
+        _studentName = studentName;
+        _topic = topic;
+    }
+    public string GetSummary () {
+        return $"{_studentName} - {_topic}";
+    }
+}
+
+public class MathAssingment : Assignment {
+    private string _textbookSection ;
+    private string _problems ;
+    public MathAssingment(string studentName, string topic, string textbookSection, string problems) : base(studentName, topic)
+    {
+        _textbookSection = textbookSection ;
+        _problems = problems;
+    }
+}
+
+MathAssingment mathAssingment = new MathAssingment("Roberto Rodriguez", "Fractions", "7.3", "8-19");
+    Console.WriteLine(mathAssingment.GetSummary()); -->RETURN THE DATA OF STUDENT FROM ONE CLASS
