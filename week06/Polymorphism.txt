@@ -1,0 +1,39 @@
+Polymorphism means "many forms" and , in context of programming, is an ability to override or change the behavior
+of some methods in the derived classes of a program using th following keywords: "abstract" or "virtual" for the 
+parent class and "override" for the childs.
+
+We can use Polymorphism for keeping our code flexible and ready for change when is needed. To be honest is a great
+tool to avoid a lot of extra code, we can use that to override these methods instead or create another longer.
+In other words, we can use this ability to avoid writing code redundanting. 
+
+An application that we can use this ability is having a lot of same base code for one class like the payment 
+of our employees, the vast majority of them need the same parameter to get the total paid for them in a program.
+But what happend with some employees only are paid of some hours of working? So, we can use Polymorphism, trying 
+to set a different calculation on only ont method for that kind of employees without to recreate another complete 
+class.
+
+public abstract class Shape { // Paren class
+    
+    public abstract double GetArea();
+}
+
+public class Square: Shape {
+    private double _side;
+    public Square(double side) {
+        _side = side;
+    }
+    public override double GetArea(){ // Here we can see an example
+        return _side * _side;
+    }
+
+}
+
+public class Circle: Shape {
+    private double _radius;
+    public Circle(double radius) {
+        _radius = radius;
+    }
+    public override double GetArea(){ // Here we can see another example
+        return Math.PI * _radius * _radius;
+    }
+}
