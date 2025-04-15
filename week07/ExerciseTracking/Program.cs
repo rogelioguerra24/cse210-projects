@@ -9,7 +9,7 @@ class Program
         Console.WriteLine();
 
         List<Activity> activities = new List<Activity>();
-        
+
         Running running = new Running(30, 4.8);
         StationaryBycicles stationaryBycicles = new StationaryBycicles(30, 9.7);
         Swimmming swimmming = new Swimmming(30, 6.25);
@@ -18,7 +18,8 @@ class Program
         activities.Add(stationaryBycicles);
         activities.Add(swimmming);
 
-        foreach(Activity activity in activities){
+        foreach (Activity activity in activities)
+        {
             Console.WriteLine($"°{activity.GetSummary()}");
         }
         Console.WriteLine();

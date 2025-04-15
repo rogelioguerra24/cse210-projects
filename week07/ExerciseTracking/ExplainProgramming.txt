@@ -1,0 +1,21 @@
+1. Abstraction means the ability to reduce the size of code using classes, with variables and methods which can be writen 
+in another part outside the core program class. Because this is the first principle of programming with classes, my projects
+were made based on it, keeping the functions and some variables in a class and I called them in the core program without writting 
+it again. This principle help us, the developers, to mantain a program clear and organized to change or update the code without spend a lot of time looking for the error.
+
+2. Encapsulation means to protect or hide the variables of some class from the others to maintain the important variables 
+protected from breaking changes of values or integrity, I used this principle in many of my projects, using getters and 
+setters to populate and set its values from the core program, beacuse we can not access them directly. It help the developers
+to maintain the code and information with high fidelity and integrity to avoid breaking changes that can commit the program.
+
+3. Inheritance is the capacity of a class inherit some variables or methods from another class with major value. We can call
+them as Parent and Child, because the child can use the things that the father provide for him. It help me to avoid writing 
+a lot of extra code for each type of class with the same purpose. This principle make the code more easy and quickly to write
+it but if we deep in that principle a lot, it will a little bit hard to mantage, but if we used them with clarity and order,
+it will be an excelent tool for the companies to spend less time writing extra code and use more time creating more programs.
+
+4. Polymorphism means "many forms" but in programming means the ability for methods in derived class to override or change 
+its behaviors without the neccesity to rewrite it with another name. That principle help me to use less time writing extra code, 
+especifically when I needed to set the same kind of methods for classes with the same purpose. We only override ir or 
+change its values to provide a variety of classes that can return different values to support the neccesities or requesting
+of the clients.
